@@ -1,14 +1,14 @@
 {
  "name": "js-easing-functions",
  "version": "1.0.0",
- "description": "Easing functions that can be used in JavaScript animations",
+ "description": "Javascript easing functions based upon jQuery's easing functions, using Robert Penner's easing equations",
  "main": "./dist/index.js",
  "types": "./dist/index.d.ts",
  "author": "Ben Meyrick <bameyrick@gmail.com>",
  "license": "BSD",
  "keywords": [
   "easings",
-  "animations"
+  "animation"
  ],
  "repository": {
   "type": "git",
