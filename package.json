@@ -1,5 +1,5 @@
 {
- "name": "easing-functions",
+ "name": "js-easing-functions",
  "version": "1.0.0",
  "description": "Easing functions that can be used in JavaScript animations",
  "main": "./dist/index.js",

@@ -1,6 +1,6 @@
 /*
  *
- * TERMS OF USE - easing-functions
+ * TERMS OF USE - js-easing-functions
  *
  * Open source under the BSD License.
  *

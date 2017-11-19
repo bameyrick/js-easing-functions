@@ -1,4 +1,4 @@
-# Easing Functions
+# JS Easing Functions
 Easing functions based upon jQuery's easing functions, using Robert Penner's easing equations.
 
 ## Install
