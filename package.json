@@ -1,45 +1,39 @@
 {
- "name": "js-easing-functions",
- "version": "1.0.0",
- "description": "Javascript easing functions based upon jQuery's easing functions, using Robert Penner's easing equations",
- "main": "./dist/index.js",
- "types": "./dist/index.d.ts",
- "author": "Ben Meyrick <bameyrick@gmail.com>",
- "license": "BSD",
- "keywords": [
-  "easings",
-  "animation"
- ],
- "repository": {
-  "type": "git",
-  "url": "git+https://github.com/bameyrick/js-easing-functions.git"
- },
- "scripts": {
-  "lint": "tslint --project src/*.ts",
-  "lint-staged": "lint-staged",
-  "precommit": "lint-staged",
-  "prepublishOnly": "npm run lint && tsc -p ./ --outDir dist/",
-  "postcommit": "npm run prepublishOnly",
-  "tslint-check": "tslint-config-prettier-check ./tslint.json"
- },
- "lint-staged": {
-  "*.ts": [
-   "tslint --project",
-   "prettier --print-width 140 --use-tabs --single-quote --trailing-comma es5 --parser typescript --write",
-   "git add"
-  ],
-  "*.json": [
-   "prettier --print-width 140 --use-tabs --single-quote --trailing-comma es5 --parser json --write",
-   "git add"
-  ]
- },
- "devDependencies": {
-  "husky": "^0.14.3",
-  "lint-staged": "^5.0.0",
-  "prettier": "^1.8.2",
-  "tslint": "^5.8.0",
-  "tslint-config-prettier": "^1.6.0",
-  "tslint-plugin-prettier": "^1.3.0",
-  "typescript": "^2.6.1"
- }
+	"name": "js-easing-functions",
+	"version": "1.0.1",
+	"description": "Javascript easing functions based upon jQuery's easing functions, using Robert Penner's easing equations",
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"author": "Ben Meyrick <bameyrick@gmail.com>",
+	"license": "BSD",
+	"keywords": ["easings", "animation"],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/bameyrick/js-easing-functions.git"
+	},
+	"scripts": {
+		"lint": "tslint --project src/*.ts",
+		"lint-staged": "lint-staged",
+		"precommit": "lint-staged",
+		"prepublishOnly": "rm -rf ./dist && npm run lint && tsc -p ./ --outDir dist/",
+		"postcommit": "npm run prepublishOnly",
+		"tslint-check": "tslint-config-prettier-check ./tslint.json"
+	},
+	"lint-staged": {
+		"*.ts": [
+			"tslint --project",
+			"prettier --print-width 140 --use-tabs --single-quote --trailing-comma es5 --parser typescript --write",
+			"git add"
+		],
+		"*.json": ["prettier --print-width 140 --use-tabs --single-quote --trailing-comma es5 --parser json --write", "git add"]
+	},
+	"devDependencies": {
+		"husky": "^0.14.3",
+		"lint-staged": "^5.0.0",
+		"prettier": "^1.8.2",
+		"tslint": "^5.8.0",
+		"tslint-config-prettier": "^1.6.0",
+		"tslint-plugin-prettier": "^1.3.0",
+		"typescript": "^2.6.1"
+	}
 }
