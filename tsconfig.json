@@ -2,7 +2,7 @@
 	"compilerOptions": {
 		"moduleResolution": "node",
 		"module": "commonjs",
-		"target": "es2015",
+		"target": "ES5",
 		"sourceMap": false,
 		"experimentalDecorators": true,
 		"noImplicitAny": false,
