@@ -6,12 +6,12 @@ You can install via npm or yarn
 
 ### npm
 ```bash
-npm install --save easing-functions
+npm install --save js-easing-functions
 ```
 
 ### yarn
 ```bash
-yarn add easing-functions
+yarn add js-easing-functions
 ```
 
 ## Usage
@@ -52,13 +52,13 @@ These functions can be visualised at http://easings.net
 ### Importing
 You can import the easing functions you want using ES6 imports
 ```javascript
-import { easeInOutBack } from 'easing-functions';
+import { easeInOutBack } from 'js-easing-functions';
 ```
 
 ### Example use
 _Note: this is a rough function to give you an idea of how to use an easing function. Your implementation will probably need more checks to ensure the final value at the end of the animation is the one you specified._
 ```javascript
-import { easeInOutBack } from 'easing-functions';
+import { easeInOutBack } from 'js-easing-functions';
 
 const elemToAnimate = document.querySelector('.MyElem');
 const duration = 2000;
