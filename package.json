@@ -1,6 +1,6 @@
 {
 	"name": "js-easing-functions",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Javascript easing functions based upon jQuery's easing functions, using Robert Penner's easing equations",
 	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",
