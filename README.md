@@ -56,22 +56,24 @@ import { easeInOutBack } from 'js-easing-functions';
 ```
 
 ### Example use
+A simple eased animation to translateY an element from 100px to 200px.
+
 _Note: this is a rough function to give you an idea of how to use an easing function. Your implementation will probably need more checks to ensure the final value at the end of the animation is the one you specified._
 ```javascript
 import { easeInOutBack } from 'js-easing-functions';
 
 const elemToAnimate = document.querySelector('.MyElem');
 const duration = 2000;
-const startPosition = 0;
-const endPosition = 100;
+const startValue = 100;
+const amountOfChange = 100;
 
 let startTime;
 
 function tick() {
   const elapsed = Date.now() - startTime;
-  this.elemToAnimate.transform = `translateY(${easeInOutBack(elapsed, startPosition, endPosition, duration)}px)`;
+  this.elemToAnimate.transform = `translateY(${easeInOutBack(elapsed, startValue, amountOfChange, duration)}px)`;
   
-  if (elapsed < duration)
+  if (elapsed < duration) {
     requestAnimationFrame(tick);
   }
 }
